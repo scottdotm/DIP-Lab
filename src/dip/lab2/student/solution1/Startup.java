@@ -1,5 +1,4 @@
 package dip.lab2.student.solution1;
-
 // Imports
 import java.text.NumberFormat;
 import javax.swing.JOptionPane;

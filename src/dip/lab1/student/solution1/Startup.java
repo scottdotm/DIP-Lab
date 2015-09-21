@@ -1,11 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package dip.lab1.student.solution1;
-
-
+//imported number format
 import java.text.NumberFormat;
 /**
  *
@@ -41,14 +35,6 @@ public class Startup {
             nf.format(hr.getAnnualCompensationForEmployee(employees[i])));
         }
         
-        // Or, we could do this...but this is fragile
-//        System.out.println("Employee 1 annual compensation: " +
-//            nf.format(hr.getAnnualCompensationForEmployee(emp1)));
-//        System.out.println("Employee 2 annual compensation: " +
-//            nf.format(hr.getAnnualCompensationForEmployee(emp2)));
-//        System.out.println("Employee 3 annual compensation: " +
-//            nf.format(hr.getAnnualCompensationForEmployee(emp3)));
         
     }
-
 }
