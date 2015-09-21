@@ -5,7 +5,7 @@ import java.util.Scanner;
  * First Input type 'From Console'
  * @author Scott
  */
-public class KeyboardInput implements Input {
+public class ConsoleInput implements Input {
     
     public String readMessage() {
        System.out.println(ENTER_MESSAGE);
