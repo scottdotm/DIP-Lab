@@ -17,9 +17,6 @@ import javax.swing.JOptionPane;
  * @author Scott
  */
 public class Startup {
-    public static enum ServiceQuality {
-           GOOD, FAIR, POOR
-    };
  
     public static void main(String[] args) {
                 

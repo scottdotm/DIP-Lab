@@ -5,7 +5,7 @@ package dip.lab3.student.solution1;
  */
 public class ConsoleOutput implements Output {
     public void writeMessage(String message) {
-       System.out.println(OUTPUT_MESSAGE);
+       System.out.println("Here is the text you entered!");
        System.out.println(message);
     }
 }

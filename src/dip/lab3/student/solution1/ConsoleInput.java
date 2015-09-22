@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class ConsoleInput implements Input {
     
     public String readMessage() {
-       System.out.println(ENTER_MESSAGE);
+       System.out.println("Enter your message below and press Return!");
        
        Scanner userInput = new Scanner(System.in);
         

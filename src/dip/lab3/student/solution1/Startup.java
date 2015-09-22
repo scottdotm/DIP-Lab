@@ -7,8 +7,8 @@ public class Startup {
 
     public static void main(String[] args) {
 
-        Input input = new GUIInput();
-        Output output = new GUIOutput();
+        Input input = new ConsoleInput();
+        Output output = new ConsoleOutput();
 
         MessageService message = new MessageService(input, output);
 

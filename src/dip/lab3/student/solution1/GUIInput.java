@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 public class GUIInput implements Input {
     private String guiMessage;
     public String readMessage() {
-        guiMessage = JOptionPane.showInputDialog(null, ENTER_MESSAGE);
+        guiMessage = JOptionPane.showInputDialog(null, "Enter your message below and press Return!");
         
       return guiMessage;
     }

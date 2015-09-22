@@ -14,16 +14,16 @@ public class Startup {
          */
 
         //Low-level modules
-        dip.lab1.instructor.solution1.Employee emp1 = new dip.lab1.instructor.solution1.HourlyPlusIncentiveEmployee(10.50, 2020);
-        dip.lab1.instructor.solution1.Employee emp2 = new dip.lab1.instructor.solution1.SalariedEmployee(45000, 1250);
-        dip.lab1.instructor.solution1.Employee emp3 = new dip.lab1.instructor.solution1.SalariedEmployee(90000,0);
+        Employee emp1 = new HourlyPlusIncentiveEmployee(10.50, 2020);
+        Employee emp2 = new SalariedEmployee(45000, 1250);
+        Employee emp3 = new SalariedEmployee(90000,0);
         
         // Create a collection that we can process as a group --
         // demands polymorphic behavior
-        dip.lab1.instructor.solution1.Employee[] employees = {emp1, emp2, emp3};
+        Employee[] employees = {emp1, emp2, emp3};
 
         // High-level module
-        dip.lab1.student.solution1.HRService hr = new dip.lab1.student.solution1.HRService();
+        HRService hr = new HRService();
 
         // Just utility code to format numbers nice.
         NumberFormat nf = NumberFormat.getCurrencyInstance();

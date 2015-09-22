@@ -13,9 +13,7 @@ public class FoodServiceTipCalculator implements TipCalculator {
             "Error: bill must be greater than or equal to " + MIN_BILL;
     
     private double bill;
-    public enum ServiceQuality {
-        GOOD, FAIR, POOR
-    }
+    
     private ServiceQuality serviceQuality;
 
     public FoodServiceTipCalculator(ServiceQuality q, double billAmt) {
