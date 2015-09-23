@@ -5,7 +5,7 @@ package dip.lab1.student.solution1;
  * @author Scott
  */
 public class HourlyPlusIncentiveEmployee implements Employee {
-    // This class needs properties that the Salaried class does not
+
     private double hourlyRate;
     private double totalHrsForYear;
     
@@ -22,13 +22,6 @@ public class HourlyPlusIncentiveEmployee implements Employee {
         return hourlyRate;
     }
 
-    public final void setHourlyRate(double hourlyRate) {
-        if(hourlyRate < 0 || hourlyRate > 500) {
-            throw new IllegalArgumentException();
-        }
-        this.hourlyRate = hourlyRate;
-    }
-
     public final double getTotalHrsForYear() {
         return totalHrsForYear;
     }
@@ -39,4 +32,11 @@ public class HourlyPlusIncentiveEmployee implements Employee {
         }
         this.totalHrsForYear = totalHrsForYear;
     }    
+    
+    public final void setHourlyRate(double hourlyRate) {
+        if(hourlyRate < 0 || hourlyRate > 500) {
+            throw new IllegalArgumentException();
+        }
+        this.hourlyRate = hourlyRate;
+    }
 }

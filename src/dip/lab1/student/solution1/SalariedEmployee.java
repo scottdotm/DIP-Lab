@@ -8,8 +8,6 @@ public class SalariedEmployee implements Employee {
     private double annualBonus;
 
     
-
-    
     public SalariedEmployee(double annualSalary, double annualBonus) {
         setAnnualSalary(annualSalary);
         setAnnualBonus(annualBonus);
