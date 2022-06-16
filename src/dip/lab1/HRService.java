@@ -31,11 +31,12 @@ public class HRService {
     private static final String ERROR_TITLE = "Employee Type Unknown";
 
     /**
-     * This is a truly horrible way to make decisions. Very rigid and fragile!
+     * This is a truly horrible way to make decisions.Very rigid and fragile!
      * @param e - an employee object (not truly polymorphic!)
      * employeeType - a String identifying the employee type. A constant
      * (see above) should be used for this, but can you guarantee it will be?
      * Are there other options? Hint: enum
+     * @param employeeType
      * @return the annual compensation for supported employee types
      */
     public double getAnnualCompensationForEmployee(Employee e,
@@ -45,14 +46,10 @@ public class HRService {
 
         // One example of using fragile if logic to determine employee type.
         // If only we could use polymorphism instead!
-        if(employeeType.equals(HOURLY_TYPE)) {
-            annualCompensation = e.getAnnualWages();
-
-        } else if(employeeType.equals(SALARIED_TYPE)) {
-            annualCompensation = e.getAnnualSalary();
-
-        } else {
-            JOptionPane.showMessageDialog(
+        switch (employeeType) {
+            case HOURLY_TYPE -> annualCompensation = e.getAnnualWages();
+            case SALARIED_TYPE -> annualCompensation = e.getAnnualSalary();
+            default -> JOptionPane.showMessageDialog(
                     null, ERROR_MSG, ERROR_TITLE, JOptionPane.ERROR_MESSAGE);
         }
 

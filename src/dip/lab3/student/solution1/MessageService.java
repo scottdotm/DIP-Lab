@@ -5,8 +5,8 @@ package dip.lab3.student.solution1;
  */
 public class MessageService {
 
-    private Input input;
-    private Output output;
+    private final Input input;
+    private final Output output;
 
     public MessageService(Input input, Output output) {
         this.input = input;

@@ -3,7 +3,7 @@ package dip.lab1.student.solution1;
  *
  * @author Scott
  */
-public class SalariedEmployee implements Employee {
+public final class SalariedEmployee implements Employee {
     private double annualSalary;
     private double annualBonus;
 
@@ -14,6 +14,7 @@ public class SalariedEmployee implements Employee {
     }
 
     
+    @Override
     public double getAnnualIncome() {
         return annualSalary + annualBonus;
     }
